@@ -1,0 +1,60 @@
+    #orange {
+    height: 10vh;
+    background-color: rgb(250, 232, 94);
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    
+    animation-name: orange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes orange {
+    0% {width: 10vw; left: 25%;}
+    15% {width: 15vw;}
+    50% {width: 10vw; left: 75%;}
+    65% {width: 15vw;}
+    100% {width: 10vw; left: 25%;}
+  }
+  
+  #red{
+    width: 8vw;
+    background-color: rgb(51, 150, 250);
+    position: absolute;
+    left: 50%;
+      
+    animation-name: red;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes red {
+    0% {top: 25%; height: 10vh; z-index: 1;}
+    15% {height: 15vh;}
+    50% {top: 70%; z-index: 1; height: 10vh;}
+    65% {height: 15vh;}
+    75% {z-index: 2;}
+    100% {top: 25%; height: 10vh; z-index: 2;}
+  }
+  
+  #border {
+    width: 75vw;
+    height: 90vh;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #202020;
+    
+    animation-name: border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes border {
+    0% {border-style: solid;}
+    50% {border-style: dashed;}
+    100% {border-style: solid;}
+  }
